@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 50px;
+            background-color: #007bff;
+            color: #fff;
+        }
+        header img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        nav a {
+            margin: 0 15px;
+            font-weight: bold;
+            color: #fff;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .container h1, .container h2 {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .container p {
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        .btn-info {
+            display: block;
+            margin: 30px auto;
+            font-size: 1.5rem;
+        }
+        .portfolio-content, .about-content, .contact-content {
+            margin-top: 50px;
+            padding: 0 50px;
+        }
+        .footer-content {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #007bff;
+            margin-top: 50px;
+        }
+        .footer-content p, .footer-content ul {
+            margin: 0;
+        }
+        .footer-content ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+        }
+        .footer-content ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        .footer-content ul li a {
+            color: #fff;
+            transition: color 0.3s;
+        }
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            padding: 50px 0;
+        }
+
+        .footer-content {
+            text-align: center;
+        }
+
+        .social-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .social-links li {
+            margin-bottom: 10px;
+        }
+
+        .social-links a {
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            text-decoration: none;
+            color: #ccc;
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
+                padding: 20px 0;
+            }
+
+            .social-links {
+                text-align: center;
+            }
+
+            .col-md-4 {
+                margin-bottom: 30px;
+            }
+        }
+
+        .footer-content ul li a:hover {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .projects {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .projects > div {
+            flex: 1;
+            margin: 20px;
+            min-width: 200px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .projects > div:hover {
+            transform: scale(1.05);
+        }
+        .projects h4 {
+            margin-bottom: 10px;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            nav {
+                margin-top: 10px;
+            }
+            .portfolio-content, .about-content, .contact-content {
+                padding: 0 20px;
+            }
+            .projects {
+                flex-direction: column;
+            }
+            .projects > div {
+                margin: 10px 0;
+            }
+            .description li > a {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="container-fluid">
+        <div class="d-flex align-items-center">
+            <img src="profile.jpg" alt="Photo de profil">
+            <p class="ml-3 mb-0 text-uppercase">Batoumen Mbunto Ivano</p>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="#accueil" class="nav-link smooth-scroll">Accueil</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link smooth-scroll">Portfolio</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link smooth-scroll">Contact</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link smooth-scroll">À propos</a></li>
+            </ul>            
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="accueil">
+            <h1>Bienvenue sur mon Portfolio</h1>
+            <p>Je suis passionné par l'informatique. J'ai développé une solide expérience dans des langages de programmation comme Python et le framework Django, ainsi que dans les langages HTML et CSS. Mon objectif est de créer des solutions innovantes et de qualité qui répondent aux besoins de mes clients et dépassent leurs attentes.</p>
+            <p>À travers mon parcours, j'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis de développer mes compétences techniques et créatives. Je suis toujours à la recherche de nouvelles façons d'améliorer mes compétences et d'explorer de nouvelles technologies pour rester à la pointe de mon domaine.</p>
+            <p>En dehors du travail, je suis passionné par des sports comme le tennis. Je crois fermement en l'apprentissage continu et je suis toujours enthousiaste à l'idée de relever de nouveaux défis passionnants dans le domaine informatique.</p>
+           
+        </section>
+
+        <section id="portfolio" class="portfolio-content">
+            <a href="#portfolio" class="btn btn-info text-uppercase">Projets réalisés</a>
+            <p>Découvrez quelques-uns de mes projets récents où j'ai pu mettre en pratique mes compétences et ma passion pour l'informatique. Chaque projet représente un défi unique que j'ai relevé avec créativité et engagement. N'hésitez pas à explorer ces exemples pour avoir un aperçu de mon travail. Si vous avez des questions ou si vous souhaitez en savoir plus sur un projet spécifique, n'hésitez pas à me contacter.</p>
+            <div class="projects">
+                <div>
+                    <h4>Projet réalisé</h4>
+                    <p>Développement d'une application de gestion d'une école</p>
+                    <p>Date : 2018-2019</p>
+                </div>
+                <div>
+                    <h4>Projet réalisé</h4>
+                    <p>Développement d'un site pour une école</p>
+                    <p>Date : 2018-2019</p>
+                </div>
+                <div>
+                    <h4>Projet réalisé</h4>
+                    <p>Développement d'une application de gestion d'un fast food</p>
+                    <p>Date : 2020-2021</p>
+                </div>
+                <div>
+                    <h4>Projet réalisé</h4>
+                    <p>Développement d'une application de e-commerce</p>
+                    <p>Date : 2019-2020</p>
+                </div>
+            </div>
+        </section>
+
+       
+        <section id="contact" class="contact-content">
+            <h2>Contactez-moi</h2>
+            <p>N'hésitez pas à me contacter pour discuter de vos projets, poser des questions ou simplement dire bonjour ! Je suis toujours ouvert aux nouvelles opportunités de collaboration et je serais ravi d'échanger avec vous.</p>
+            <p>Vous pouvez me joindre par e-mail à <a href="mailto:batoumenivano@gmail.com">batoumenivano@gmail.com</a> ou via LinkedIn en visitant mon profil <a href="https://www.linkedin.com/in/ivano-batoumen-89391122a">Ivano Batoumen</a>.</p>
+            <p>Je suis impatient d'avoir de vos nouvelles !</p>
+        </section>
+    </main>
+
+    <footer id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Mes Services</h3>
+                    <ul class="social-links">
+                        <li><a href="#">Développement Web</a></li>
+                        <li><a href="#">Web Designer</a></li>
+                        <li><a href="#">Développeur Python</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Mon Entreprise</h3>
+                    <ul class="social-links">
+                        <li><a href="#">Équipe composée de 5 personnes</a></li>
+                        <li><a href="#">Une communauté active</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Mes Contacts</h3>
+                    <ul class="social-links">
+                        <li><a href="#">698297300</a></li>
+                        <li><a href="https://wa.me/698297300">WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>&copy; 2024 BATOUMEN MBUNTO IVANO. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts JavaScript -->
+    <script src="jquery.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script>
+        // Sélectionnez tous les liens avec la classe smooth-scroll
+        const links = document.querySelectorAll('.smooth-scroll');
+    
+        // Ajoutez un gestionnaire d'événement clic à chaque lien
+        links.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+    
+                // Récupérez l'attribut href du lien cliqué
+                const href = this.getAttribute('href');
+    
+                // Utilisez scrollTo pour animer le défilement vers la section cible
+                document.querySelector(href).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>
